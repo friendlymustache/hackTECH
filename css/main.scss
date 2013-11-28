@@ -1,0 +1,200 @@
+$orange: #ff8400;
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+	font-family: norwester;
+	src: url('../fonts/norwester.ttf'),
+    	 url('../fonts/norwester.eot'); /* IE9 */
+}
+
+.header {
+	padding: 25px 0px 25px 0px;
+	border-bottom:1px #2e2e2e solid;
+	background-color:white;
+	h1 {
+		font-family: norwester;
+		color:$orange;
+		margin:0px;
+		margin-top:5px;
+	}
+	strong {
+		font-family: norwester;
+		color:#c7c7c7;
+		font-weight:500;
+	}
+	p {
+		word-spacing: 25px;
+		margin-top: 15px;
+	}
+	a {
+		color:$orange;
+		font-weight:600;
+	}
+	a:hover {
+		text-decoration:none;
+		opacity:0.8;
+	}
+}
+
+.tagline {
+	padding: 150px 0px 100px 0px;
+	background: url('../img/hackers.jpg') no-repeat; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.image {
+	color:white;
+	h1 {
+		font-family: norwester;
+		font-size:80px;
+		text-shadow: 1px 1px 0px #2e2e2e;
+        filter: dropshadow(color=#2e2e2e, offx=1, offy=1);
+	}
+	p {
+		font-family: norwester;
+		margin-bottom:5px;
+		font-size:20px;
+		text-shadow: 1px 1px 0px #2e2e2e;
+        filter: dropshadow(color=#2e2e2e, offx=1, offy=1);
+	}
+	h2 {
+		margin:0px;
+		font-family:norwester;
+		color:$orange;
+		text-shadow: 1px 1px 0px #2e2e2e;
+        filter: dropshadow(color=#2e2e2e, offx=1, offy=1);
+        margin-top:-30px;
+        margin-bottom:45px;
+	}
+}
+
+.register {
+	background-color:#ff9422;
+	color:white;
+	border:0px;
+	border-radius:5px;
+	width:50%;
+	height: 50px;
+	font-family: norwester;
+	font-size:25px;
+	-webkit-box-shadow: 2px 2px 0px rgba(204, 106, 0, 1);
+	-moz-box-shadow:    2px 2px 0px rgba(204, 106, 0, 1);
+	box-shadow:         2px 2px 0px rgba(204, 106, 0, 1);
+    &:active {
+    	-webkit-box-shadow: -2px -2px 0px rgba(204, 106, 0, 1);
+		-moz-box-shadow:    -2px -2px 0px rgba(204, 106, 0, 1);
+		box-shadow:         -2px -2px 0px rgba(204, 106, 0, 1);
+    }
+}
+
+.stats {
+	padding: 50px 0px 50px 0px;
+	h1 {
+		font-family: norwester;
+		font-size:45px;
+	}
+	strong {
+		font-family: norwester;
+		color:$orange;
+	}
+}
+
+.workshops {
+	background: url('../img/stadium.jpg') no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	padding: 50px 0px 50px 0px;
+	h1 {
+		font-family: norwester;
+		font-size:45px;
+		color:white;
+		text-shadow: 1px 1px 0px #2e2e2e;
+        filter: dropshadow(color=#2e2e2e, offx=1, offy=1);
+	}
+	strong {
+		font-family: norwester;
+		color:$orange;
+		text-shadow: 1px 1px 0px #2e2e2e;
+        filter: dropshadow(color=#2e2e2e, offx=1, offy=1);
+	}
+}
+
+.shops {
+	background-color:white;
+	border-radius:5px;
+	padding: 20px 50px 30px 20px;
+	h2 {
+		margin-top:0px;
+		font-family:norwester;
+	}
+	p {
+		font-weight:600;
+	}
+	h4 {
+		font-size:14px;
+		font-family: 'Lora', serif;
+	}
+	a {
+		color:$orange;
+		text-decoration:none;
+	}
+	-webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 1);
+	-moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 1);
+	box-shadow:         1px 1px 1px rgba(50, 50, 50, 1);
+}
+
+.faq {
+	h1 {
+		font-family:norwester;
+		font-size:40px;
+	}
+	padding: 50px 0px 50px 0px;
+}
+
+.sponsors {
+	h1 {
+		font-family:norwester;
+		font-size:40px;
+	}
+	p {
+		font-size:20px;
+	}
+	a {
+		color:$orange;
+	}
+	padding: 50px 0px 50px 0px;
+}
+
+.press {
+	h1 {
+		font-family:norwester;
+		font-size:40px;
+	}
+	p {
+		font-size:20px;
+	}
+	a {
+		color:$orange;
+	}
+	padding: 50px 0px 50px 0px;
+}
+
+.footer {
+	padding: 10px 0px 25px 0px;
+	p {
+		margin:0px;
+	}
+	a {
+		margin:0px;
+		color:$orange;
+		text-decoration:none;
+	}
+}
