@@ -23,7 +23,7 @@ var width = $(window).width();
 			$('.header').css({"padding" : "0px", "height" : "60px"});
 		}
 		else{
-			$('.header').css({"padding" : "25px 0px 25px 0px"});
+			$('.header').css({"padding" : "15px 0px 15px 0px"});
 		}
 
 
@@ -50,7 +50,7 @@ var width = $(window).width();
 
 	else{
 			$('.col-lg-8').css({"position" : "static", "float" : "right", "left" : "auto", "margin-left" : "0"});
-			$('.header').css({"padding" : "25px 0px 25px 0px", "height" : "auto"});
+			$('.header').css({"padding" : "15px 0px 15px 0px", "height" : "auto"});
 			$('#logo').attr("src", "img/navbar.png");			
 			$('.subblurb').css("width", "auto");
 
