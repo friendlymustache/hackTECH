@@ -45,6 +45,7 @@
 .sponsor_logos > a > img{
 	-webkit-filter: grayscale(1);
 	opacity: 0.5;
+	transition: -webkit-filter, opacity .3s;			
 }
 
 
