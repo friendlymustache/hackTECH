@@ -1,4 +1,260 @@
-%h3 Home
-- @users.each do |user|
-  %p
-    User: #{link_to user.name, user}
+.tagline
+  .container
+    %h1 You can't git bigger than this
+    %br
+      %h2.subblurb
+        %span#date Jan. 24, 9PM - Jan. 26, 4 PM
+        %br
+          =link_to("Santa Monica Place", "https://www.google.com/maps/preview#!q=319+Colorado+Avenue,+Santa+Monica,+CA,+90401&data=!4m12!2m11!1m10!1s0x80c2a4d178bda511:0x47754eb1369976b4!3m8!1m3!1d26419!2d-118.129853!3d34.1380034!3m2!1i1024!2i768!4f13.1", :id => "rose_bowl_directions") 
+      =link_to("https://docs.google.com/forms/d/1YVZ6ClME7_WvURyUqNasLBpGZ6SF9h2rXHSzOwYhVhM/viewform") do
+        %button#register-big-button.register
+          REGISTER NOW
+#about.stats
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h1.text-center
+          %strong 1500+
+          Hackers
+          %strong 50+
+          Schools
+          %strong $20000+
+          Prizes
+        %h1.text-center
+          %strong All meals and snacks
+          provided
+        %h1.text-center
+          %strong 36 hours
+          of straight hacking
+        %h1.text-center
+          %strong Too Much
+          swag to give out
+.workshops
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h1.text-center{:style => "margin-bottom:340px;"}
+          %strong largest hackathon
+          on the west coast
+        %h1.text-center
+          HACK BY THE BEACH IN
+          %strong SANTA MONICA
+#faq_parent
+  .faq
+    .container
+      .row
+        .col-lg-10.col-lg-offset-1
+          %br
+            %h1 FAQ
+            %br
+              .row
+                .col-lg-4
+                  %p
+                    %b What is a hackathon?
+                  %p
+                    A hackathon is a place where the only thing limiting what you build is your own creativity. Stay up for 48 hours with the smartest people you'll ever meet, building the coolest things you have created and chugging more Red Bull than you ever thought possible. Check out this
+                    = succeed "by" do
+                      %a{:href => "https://medium.com/hackathons-anonymous/92668579601"} blog post
+                    = succeed "," do
+                      %a{:href => "https://twitter.com/davefontenot"} Dave Fontenot
+                    which tells you what to expect.
+                .col-lg-4
+                  %p
+                    %b What should I create?
+                  %p You can build whatever you want: websites, apps, or hardware (no soldering allowed). All code must be written during the hackathon - feel free to use open source libraries and APIs. Hacks are judged on creativity, technical difficulty, usefulness, and overall awesomeness.
+                .col-lg-4
+                  %p
+                    %b When should I arrive at the venue?
+                  %p
+                    The opening ceremony starts at 9pm on Friday, January 24th.
+                    %b.b-orange Be sure to find a place to stay if you plan on arriving before January 24th!
+                    There are plenty of cool places to check out if you get to LA early.
+              %br
+                %br
+                  .row
+                    .col-lg-4
+                      %p
+                        %b When does the event end?
+                      %p The final awards and closing ceremony will end at 4pm on Sunday, January 26th. Shuttles to LAX will be available from 9am to 9pm on Sunday.
+                    .col-lg-4
+                      %p
+                        %b Who can come?
+                      %p Any undergraduate or graduate students. We also admit high school students on a case-by-case basis.
+                    .col-lg-4
+                      %p
+                        %b What should I bring?
+                      %p You, an idea, photo ID, your hacking setup, clothes, toiletries, and a sleeping bag (for the weak).
+                  %br
+                    %br
+                      .row
+                        .col-lg-4
+                          %p
+                            %b Do I have to apply or just register?
+                          %p
+                            Anyone can come to hackTECH! However, there is an application process for awarding travel reimbursements. If you're out-of-state and want up to $200 travel reimbursed,
+                            = succeed "." do
+                              %a{:href => "https://docs.google.com/forms/d/1YVZ6ClME7_WvURyUqNasLBpGZ6SF9h2rXHSzOwYhVhM/viewform"} apply here
+                        .col-lg-4
+                          %p
+                            %b Do I sign up as a team or individual?
+                          %p
+                            You can sign up as a team of up to four members or as an individual. If you're an individual looking for team members, you will find tons of other smart people at the event to form a team.
+                        .col-lg-4
+                          %p
+                            %b What if I'm from out-of-state and don't get chosen for a travel reimbursement?
+                          %p We would still love to have you! You can still register and hack. The only difference is that we won't cover any of your travel expenses.
+                      %br
+                        %br
+                          .row
+                            .col-lg-4
+                              %p
+                                %b How does the application process work for travel reimbursements?
+                              %p
+                                We are using rolling admission, so get your applications in early. Applications for travel reimbursements are  due December 25th. Don't worry if you haven't heard back about reimbursements
+                                yet!
+                                %b.b-orange We're waiting on RSVPs from our first round of reimbursements and will be sending more out January 6th.
+                            .col-lg-4
+                              %p
+                                %b I live in Northern California. How do I get to the event?
+                              %p We will provide buses free of charge to the first 500 applicants from Northern California that say they need a bus on their registration. You can catch our buses at Berkeley or Stanford at 10:30am or 3:00pm on Friday, January 24th. We'll drop you off at Stanford or Berkeley at 10:00pm on Sunday. More details to come.
+                            .col-lg-4
+                              %p
+                                %b What if I'm flying from out of state?
+                              %p We will provide free shuttles at LAX throughout Friday afternoon that will bring you directly to the venue and Sunday afternoon to take you back to the airport. More details to come.
+                          %br
+                            %br
+                              .row
+                                .col-lg-4
+                                  %p
+                                    %b How does reimbursement work?
+                                  %p At the event, we will distribute reimbursement forms to individuals selected for $200 reimbursements. Following the event, we will do a direct transfer to your account.
+                                .col-lg-4
+                                  %p
+                                    %b How are hacks presented?
+                                  %p On Sunday at 10:30am, all hackers will be able to demo their hacks to sponsors and their fellow hackers. Fifteen hacks will be selected based on submitted videos, and these teams/individuals will present their hacks to everyone for two minutes.
+                                .col-lg-4
+                                  %p
+                                    %b What other rules should I be aware of?
+                                  %p
+                                    We're glad you asked! Alcohol is forbidden. Also, no soldering irons, open flames, or anything else you couldn't safely use in a stadium (
+                                    %a{:href => "mailto:contact@hacktech.io"} ask us
+                                    if in doubt). No weapons, firearms, etc. No leaving the VIP floors 
+%hr
+  #sponsors
+    .sponsors
+      .container
+        .row
+          .sponsor_col
+            %br
+              %p#sponsor_heading
+                Want your logo here?
+                %a{:href => "sponsorship.pdf", :style => "text-decoration:none;font-weight:bold;"} Sponsor us!
+              %br
+                .row-1.sponsor_logos
+                  %a#att{:href => "http://developer.att.com/"}
+                    =image_tag("sponsors/ATT.jpg")
+                .row-1-5.sponsor_logos
+                  %a#microsoft{:href => "http://msdn.microsoft.com/en-us/default.aspx"}
+                    =image_tag("sponsors/microsoft.jpg")
+                  %a#aws{:href => "http://aws.amazon.com"}
+                    =image_tag("sponsors/aws.png")
+                .row-2.sponsor_logos
+                  %a#emc{:href => "http://www.emc.com/"}
+                    =image_tag("sponsors/EMC.png")
+                  %a#realnetworks{:href => "http://www.realnetworks.com/"}
+                    =image_tag("sponsors/realnetworks.jpg")
+                  %a#bloomberg{:href => "http://www.bloomberg.com/"}
+                    =image_tag("sponsors/bloomberg.jpg")
+                .row-2.sponsor_logos
+                  %a#mitek{:href => "http://www.miteksystems.com/"}
+                    =image_tag("sponsors/miteksystems.png")
+                  %a#dropbox{:href => "http://www.dropbox.com/"}
+                    =image_tag("sponsors/dropbox.png")
+                  %a#fitbit{:href => "http://www.fitbit.com/"}
+                    =image_tag("sponsors/fitbit.png")
+                .row-2.sponsor_logos
+                  %a#rackspace{:href => "http://www.rackspace.com/"}
+                    =image_tag("sponsors/rackspace.jpg")
+                  %a#pinterest{:href => "http://www.pinterest.com/"}
+                    =image_tag("sponsors/pinterest.png")
+                  %a#venmo{:href => "http://www.venmo.com/"}
+                    =image_tag("sponsors/venmo.png")
+                /
+                  <div class="row-2 sponsor_logos">
+                  <a id = "appirio" target = "_blank" href="http://www.appirio.com/"><img src="sponsors/appirio.png"></img></a>
+                  </div>
+                .row-3.sponsor_logos
+                  %a#wix{:href => "http://dev.wix.com/"}
+                    =image_tag("sponsors/wix.png")
+                  %a#cisco{:href => "http://www.cisco.com"}
+                    =image_tag("sponsors/cisco.png")
+                  %a#apigee{:href => "http://www.apigee.com/"}
+                    =image_tag("sponsors/apigee.png")
+                  %a#google{:href => "https://developers.google.com/"}
+                    =image_tag("sponsors/google.png")
+                .row-3.sponsor_logos
+                  %a#a16z{:href => "http://www.a16z.com/"}
+                    =image_tag("sponsors/a16z.png")
+                  %a#wunderground{:href => "http://www.wunderground.com/"}
+                    =image_tag("sponsors/wunderground.png")
+                  %a#ebay{:href => "http://www.ebay.com/"}
+                    =image_tag("sponsors/ebay.png")
+                  %a#cloudera{:href => "http://www.cloudera.com/"}
+                    =image_tag("sponsors/cloudera.png")
+                .row-3.sponsor_logos
+                  %a#sendgrid{:href => "http://www.sendgrid.com/"}
+                    =image_tag("sponsors/sendgrid.png")
+                  %a#lob{:href => "http://www.lob.com/"}
+                    =image_tag("sponsors/lob.png")
+                  %a#mongodb{:href => "http://www.mongodb.com/"}
+                    =image_tag("sponsors/mongodb.png")
+                  %a#pebble{:href => "https://developer.getpebble.com/"}
+                    =image_tag("sponsors/pebble.png")
+                .row-3.sponsor_logos
+                  %a#firebase{:href => "http://www.firebase.com/"}
+                    =image_tag("sponsors/firebase.png")
+                  %a#alp{:href => "http://www.alsop-louie.com/"}
+                    =image_tag("sponsors/alp.jpg")
+                  %a#twilio{:href => "http://www.twilio.com/"}
+                    =image_tag("sponsors/twilio.png")
+                  %a#thiel{:href => "http://thielfoundation.org/"}
+                    =image_tag("sponsors/thiel.png")
+                .row-3.sponsor_logos
+                  %a#caltech_fund{:href => "http://fund.caltech.edu/"}
+                    =image_tag("sponsors/caltech_fund.png")
+                  %a#advantest{:href => "http://www.advantest.com/"}
+                    =image_tag("sponsors/advantest.png")
+                  %a#rocketfuel{:href => "http://www.rocketfuel.com/"}
+                    =image_tag("sponsors/rocketfuel.jpg")
+                  %a#mashery{:href => "http://www.mashery.com/"}
+                    =image_tag("sponsors/mashery.jpg")
+                .row-3.sponsor_logos
+                  %a#stickermule{:href => "http://www.stickermule.com/"}
+                    =image_tag("sponsors/stickermule.png")
+                  %a#red_bull{:href => "http://www.redbull.com/"}
+                    =image_tag("sponsors/red_bull.png")
+                  %a#lithium{:href => "http://lithium.com"}
+                    =image_tag("sponsors/lithium.png")
+                  %a#digital_ocean{:href => "http://www.digitalocean.com/"}
+                    =image_tag("sponsors/digitalocean.png")
+                .row-3.sponsor_logos
+                  %a#spacex{:href => "http://www.spacex.com"}
+                    =image_tag("sponsors/spacex.png")
+                  %a#namecheap{:href => "https://www.namecheap.com"}
+                    =image_tag("sponsors/namecheap.jpg")
+                  %a#sequoia_capital{:href => "https://www.sequoiacap.com"}
+                    =image_tag("sponsors/sequoia_capital.png")
+  %hr
+    #partners.container
+      .row
+        .sponsor_col
+          .row-1.sponsor_logos
+            %a#bruin_entrepreneurs{:href => "http://www.bruinentrepreneurs.org"}
+              =image_tag("sponsors/bruin_entrepreneurs.jpg")
+      .footer
+        .container
+          .row
+            %div
+              .row
+                %p.text-center
+                  &copy; hackTECH 2013. All Rights Reserved.

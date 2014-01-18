@@ -1,0 +1,63 @@
+.sponsor_logos{
+  width: 100%;
+  margin-left:auto;
+  margin-right:auto;
+  display: inline-block;
+}
+
+.sponsor_logos > a{
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+.sponsor_logos > a:hover{
+  opacity: 0.7;
+}
+
+.row-1 > a{
+  height: 200px;  
+}
+
+.row-2 > a{
+  height: 100px;  
+}
+
+.row-3 > a{
+  height: 100px;  
+}
+
+
+.row-4 > a{
+  height: 100px;  
+}
+
+#yapstone{
+  background-image:url('yapstone.png');
+}
+
+#emc{
+  background-image:url('emc.png');
+}
+
+#mongodb{
+  background-image:url('mongodb.png');
+}
+
+#opower{
+  background-image:url('Opower.jpg');
+}
+
+#realnetworks{
+  background-image:url('realnetworks.jpg');
+}
+
+#sendgrid{
+  background-image:url('sendgrid.png');
+}
+
+#yapstone{
+  background-image:url('yapstone.png');
+}

@@ -1,3 +1,269 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.tagline {
+  padding: 50px 0px 100px 0px;
+  margin: 0px;
+  background: image-url("beach.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  h1 {
+    font-family: norwester;
+    font-size: 70px;
+    width: 400px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #2e2e2e;
+  }
+}
+
+.image {
+  color: white;
+  
+  p {
+    font-family: norwester;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px #2e2e2e;
+    filter: dropshadow(color = #2e2e2e, offx = 1, offy = 1);
+  }
+  h2 {
+    margin: 0px;
+    font-family: norwester;
+    color: #ff8400;
+    text-shadow: 1px 1px 0px #2e2e2e;
+    filter: dropshadow(color = #2e2e2e, offx = 1, offy = 1);
+    margin-top: 0 px;
+    margin-bottom: 45px;
+  }
+}
+
+.register {
+  background-color: #ff9422;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  width: 229px;
+  height: 50px;
+  font-family: norwester;
+  font-size: 25px;
+  -webkit-box-shadow: 2px 2px 0px #cc6a00;
+  -moz-box-shadow: 2px 2px 0px #cc6a00;
+  box-shadow: 2px 2px 0px #cc6a00;
+  &:active {
+    -webkit-box-shadow: -2px -2px 0px #cc6a00;
+    -moz-box-shadow: -2px -2px 0px #cc6a00;
+    box-shadow: -2px -2px 0px #cc6a00;
+  }
+}
+
+.stats {
+  padding: 50px 0px 50px 0px;
+  h1 {
+    font-family: norwester;
+    font-size: 45px;
+  }
+  strong {
+    font-family: norwester;
+    color: #ff8400;
+  }
+}
+
+.workshops {
+  background: image-url("LA.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px 0px 50px 0px;
+  h1 {
+    font-family: norwester;
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 1px 0px #2e2e2e;
+    filter: dropshadow(color = #2e2e2e, offx = 1, offy = 1);
+  }
+  strong {
+    font-family: norwester;
+    color: #ff8400;
+    text-shadow: 1px 1px 0px #2e2e2e;
+    filter: dropshadow(color = #2e2e2e, offx = 1, offy = 1);
+  }
+}
+
+.shops {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 50px 30px 20px;
+  -webkit-box-shadow: 1px 1px 1px #323232;
+  -moz-box-shadow: 1px 1px 1px #323232;
+  box-shadow: 1px 1px 1px #323232;
+  h2 {
+    margin-top: 0px;
+    font-family: norwester;
+  }
+  p {
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 14px;
+    font-family: "Lora",serif;
+  }
+  a {
+    color: #ff8400;
+    text-decoration: none;
+  }
+}
+
+.faq {
+  padding: 0px 0px 0px 0px;
+  h1 {
+    font-family: norwester;
+    font-size: 40px;
+  }
+}
+
+.sponsors {
+  padding: 0px 0px 0px 0px;
+  h1 {
+    font-family: norwester;
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+  a {
+    color: #ff8400;
+  }
+}
+
+.press {
+  padding: 50px 0px 50px 0px;
+  h1 {
+    font-family: norwester;
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+  a {
+    color: #ff8400;
+  }
+}
+
+.footer {
+  padding: 10px 0px 25px 0px;
+  p {
+    margin: 0px;
+  }
+  a {
+    margin: 0px;
+    color: #ff8400;
+    text-decoration: none;
+  }
+}
+
+.b-orange {
+  color: #ff8400;
+}
+
+#register-big-button {
+  min-height: 50px;
+  height: auto;
+}
+
+.col-lg-8 {
+  top: -50px;
+}
+
+.text-right {
+  min-width: 300px;
+}
+
+.subblurb > {
+  * {
+    color: #ff8400;
+    text-decoration: none;
+    font-family: norwester;
+  }
+  a:hover {
+    opacity: 0.9;
+    border-bottom: 1px dashed #ff8400;
+    color: #ff8400;
+    text-decoration: none;
+  }
+}
+
+#rose_bowl_directions {
+  border-bottom: 1px dashed #ff8400;
+}
+
+#sponsor_heading {
+  text-align: center;
+  width: 100%;
+}
+
+.sponsor_logos > a > img {
+  -webkit-filter: grayscale(1);
+  opacity: 0.5;
+  transition: -webkit-filter, opacity .3s;
+  &:hover {
+    -webkit-filter: grayscale(0);
+    opacity: 1;
+  }
+}
+
+.row-1 > a > img {
+  height: 150px;
+}
+
+.row-1-5 > a > img {
+  height: 125px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.row-2 > a > img, .row-3 > a > img {
+  height: 100px;
+  margin-left: 50px;
+}
+
+.sponsor_logos {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* styling exceptions */
+
+#bruin_entrepreneurs > img {
+  height: 100px;
+}
+
+#partners:before {
+  content: "PARTNERED WITH";
+  font-size: 1em;
+  color: gray;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 0px 5px 20px 5px;
+}
+
+.sponsors > .container:before {
+  content: "SPONSORS";
+  font-size: 1em;
+  color: gray;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 0px 5px 20px 5px;
+}
+
+.sponsor_col {
+  overflow: hidden;
+  min-width: 936px;
+}

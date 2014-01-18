@@ -1,4 +1,0 @@
-HackTECH
-========
-
-Website for HackTech

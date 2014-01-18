@@ -1,13 +1,56 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
  *= require_self
  *= require_tree .
  */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lora:400,300,600,700,800);
+
+@font-face {
+  font-family: 'norwester';
+  src:url('norwester.eot');
+  src:url('norwester.eot?#iefix') format('embedded-opentype'),
+    url('norwester.svg#norwester') format('svg'),
+    url('norwester.woff') format('woff'),
+    url('norwester.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  font-family: "Open Sans";
+}
+
+#navbar-custom {
+  background-color: #fff;
+  height: 70px;
+  line-height: 70px;
+
+  .left {float: left;}
+  .right {float: right;}
+
+  img {
+    float: left;
+    margin-top: 15px;
+    height: 40px;
+  }
+
+  #links {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FF9422;
+
+     a{
+      color: #FF9422;
+      margin-left: 20px;
+     }
+
+     a:hover {
+      color: orange;
+      text-decoration: none;
+     }
+  }
+}

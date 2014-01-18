@@ -3,13 +3,20 @@
   %head
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %title= content_for?(:title) ? yield(:title) : 'Hacktech'
-    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'Hacktech'}"}
+    %meta{:name => "description", :content => "#{content_for?(:description) ? yield(:description) : 'hackTECH, co-hosted by AT&T'}"}
+    %meta{:content => "http://hacktech.io", :property => "og:url"}
+    %meta{:content => "hackTECH", :property => "og:title"}
+    %meta{:content => "http://hacktech.io/img/square_logo_big.png", :property => "og:image"}
+    %meta{:content => "Biggest Student-Run Hackathon on the West Coast.", :property => "og:description"}
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    %link{:href => "torch.ico", :rel => "shortcut icon"}
   %body
     %header
       = render 'layouts/navigation'
     %main{:role => "main"}
       = render 'layouts/messages'
       = yield
+
+
