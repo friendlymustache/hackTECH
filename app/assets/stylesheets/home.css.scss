@@ -162,86 +162,96 @@
   }
 }
 
-.b-orange {
-  color: #ff8400;
+.b-orange{
+  color:#ff8400;
 }
 
-#register-big-button {
+#register-big-button{
   min-height: 50px;
   height: auto;
 }
 
-.col-lg-8 {
-  top: -50px;
+.col-lg-8{
+  top:-50px;
 }
 
-.text-right {
-  min-width: 300px;
+.text-right{
+  min-width:300px;
 }
 
-.subblurb > {
-  * {
-    color: #ff8400;
-    text-decoration: none;
-    font-family: norwester;
-  }
-  a:hover {
-    opacity: 0.9;
-    border-bottom: 1px dashed #ff8400;
-    color: #ff8400;
-    text-decoration: none;
-  }
+.subblurb > *{
+  color: #ff8400;
+  text-decoration: none;
+  font-family: norwester;
+}
+
+.subblurb > a:hover {
+  opacity: 0.9;
+  border-bottom: 1px dashed #ff8400;
+  color: #ff8400;
+  text-decoration: none;
 }
 
 #rose_bowl_directions {
-  border-bottom: 1px dashed #ff8400;
+  border-bottom: 1px dashed #ff8400;    
 }
 
-#sponsor_heading {
-  text-align: center;
+#sponsor_heading{
+  text-align:center;
   width: 100%;
 }
 
-.sponsor_logos > a > img {
-  -webkit-filter: grayscale(1);
-  opacity: 0.5;
-  transition: -webkit-filter, opacity .3s;
-  &:hover {
-    -webkit-filter: grayscale(0);
-    opacity: 1;
-  }
+.sponsor_logos > a > img{
+  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);  /* For Webkit browsers */
+    filter: gray;  /* For IE 6 - 9 */
+    opacity: 0.5;
+  
 }
 
-.row-1 > a > img {
-  height: 150px;
+
+.sponsor_logos > a > img:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  opacity: 1.0;
 }
 
-.row-1-5 > a > img {
+.row-1 > a > img{
+  height:150px;
+}
+
+.row-1-5 > a > img{
   height: 125px;
   margin-left: 50px;
   margin-right: 20px;
 }
 
-.row-2 > a > img, .row-3 > a > img {
+.row-2 > a > img{
+  height: 100px;
+  margin-left: 50px;
+}
+
+
+.row-3 > a > img{
   height: 100px;
   margin-left: 50px;
 }
 
 .sponsor_logos {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left:auto;
+  margin-right:auto;
   text-align: center;
   width: 100%;
   margin-bottom: 30px;
 }
 
 /* styling exceptions */
-
-#bruin_entrepreneurs > img {
-  height: 100px;
+#bruin_entrepreneurs > img{
+  height:100px;
 }
 
-#partners:before {
+#partners:before{
   content: "PARTNERED WITH";
   font-size: 1em;
   color: gray;
@@ -252,7 +262,7 @@
   padding: 0px 5px 20px 5px;
 }
 
-.sponsors > .container:before {
+.sponsors > .container:before{
   content: "SPONSORS";
   font-size: 1em;
   color: gray;
@@ -260,10 +270,11 @@
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  padding: 0px 5px 20px 5px;
+  padding: 0px 5px 20px 5px;  
 }
 
-.sponsor_col {
+
+.sponsor_col{
   overflow: hidden;
   min-width: 936px;
 }
