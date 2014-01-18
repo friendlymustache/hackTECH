@@ -14,6 +14,7 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'sendgrid'
 gem 'thin'
+
 group :development do
   gem 'guard-bundler'
   gem 'guard-rails'
@@ -26,8 +27,15 @@ group :development do
 end
 group :development, :test do
   gem 'rspec-rails'
+  gem 'sqlite3'
 end
 group :test do
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'newrelic_rpm'
+  gem 'pg'
 end
