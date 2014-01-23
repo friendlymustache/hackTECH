@@ -1,0 +1,30 @@
+%h1 Editing event
+
+= form_for @event do |f|
+  - if @event.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@event.errors.count, "error")} prohibited this event from being saved:"
+      %ul
+        - @event.errors.full_messages.each do |msg|
+          %li= msg
+  .row
+    .col-md-4
+      .field
+        = f.label :first_name
+        = f.text_field :first_name
+    .col-md-4
+      .field
+        = f.label :last_name
+        = f.text_field :last_name
+    .field
+      = f.label :email
+      = f.text_field :email
+    .field
+      = f.label :phone
+      = f.number_field :phone
+    .actions
+      = f.submit 'Save'
+
+= link_to 'Show', @event
+\|
+= link_to 'Back', events_path
