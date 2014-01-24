@@ -15,6 +15,7 @@ gem 'sendgrid'
 gem 'thin'
 
 group :development do
+  gem 'sqlite3'
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
