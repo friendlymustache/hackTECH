@@ -31,4 +31,8 @@ class HomeController < ApplicationController
     send_file(Rails.root.join("app/views", "home", "participants.pdf").to_s, :disposition => "inline", :type => "application/pdf")                    
   end
 
+  def map
+    send_file(Rails.root.join("app/views", "home", "floor_plan.pdf").to_s, :disposition => "inline", :type => "application/pdf")                    
+  end
+
 end

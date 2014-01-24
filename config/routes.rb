@@ -17,7 +17,7 @@ Hacktech::Application.routes.draw do
   get "/judges" => "home#judges", as: "judges"
   get "/aws" => "home#aws", as: "aws"
   get "/participants" => "home#participants", as: "participants"
-
+  get "/map" => "home#map", as: "maps"
 
 
   ## Admin Routes
