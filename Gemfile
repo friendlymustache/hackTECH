@@ -12,6 +12,7 @@ gem 'devise'
 gem 'figaro'
 gem 'haml-rails'
 gem 'sendgrid'
+gem 'simple_form'
 gem 'thin'
 
 group :development do
