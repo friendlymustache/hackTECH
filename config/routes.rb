@@ -16,6 +16,7 @@ Hacktech::Application.routes.draw do
   get "/bus" => "home#bus_info", as: "bus_info"
   get "/judges" => "home#judges", as: "judges"
   get "/aws" => "home#aws", as: "aws"
+  get "/participants" => "home#participants", as: "participants"
 
 
 

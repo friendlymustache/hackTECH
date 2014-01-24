@@ -27,4 +27,8 @@ class HomeController < ApplicationController
     send_file(Rails.root.join("app/views", "home", "aws_credits.pdf").to_s, :disposition => "inline", :type => "application/pdf")                    
   end
 
+  def participants
+    send_file(Rails.root.join("app/views", "home", "participants.pdf").to_s, :disposition => "inline", :type => "application/pdf")                    
+  end
+
 end
