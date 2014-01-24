@@ -3,7 +3,11 @@
     = image_tag("navbar.png")
     .right
       #links
-        = link_to("register", "https://docs.google.com/forms/d/1YVZ6ClME7_WvURyUqNasLBpGZ6SF9h2rXHSzOwYhVhM/viewform")
-        = link_to("FAQ", "#faq_parent")
-        = link_to("Sponsor", "#sponsors")
-        = link_to("About", "#about")
+        //= link_to("register", "https://docs.google.com/forms/d/1YVZ6ClME7_WvURyUqNasLBpGZ6SF9h2rXHSzOwYhVhM/viewform")
+        //= link_to("FAQ", "#faq_parent")
+        //= link_to("Sponsor", "#sponsors")
+        = link_to("Schedule", schedule_path)        
+        = link_to("Prizes", prizes_path)                
+        = link_to("Arrival Info (LAX)", lax_info_path)     
+        = link_to("Buses", bus_info_path)   
+        = link_to("Judges", judges_path)
