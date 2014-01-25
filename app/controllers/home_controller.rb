@@ -4,7 +4,6 @@ class HomeController < ApplicationController
   end
 
   def prizes
-  	send_file(Rails.root.join("app/views", "home", "sponsors_and_prizes.pdf").to_s, :disposition => "inline", :type => "application/pdf")
   end
 
   def schedule
