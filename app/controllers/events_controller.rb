@@ -68,10 +68,5 @@ class EventsController < ApplicationController
     def event_params
       params.require(:event).permit(:first_name, :last_name, :email, :phone, :school)
     end
-
-    def authenticate
-      authenticate_or_request_with_http_basic do |username, password|
-      username == "shrav" && password == "kshitshit"
-    end
   end
 end
