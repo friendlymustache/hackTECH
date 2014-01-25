@@ -12,6 +12,7 @@ gem 'devise'
 gem 'figaro'
 gem 'haml-rails'
 gem 'sendgrid'
+gem 'simple_form'
 gem 'thin'
 
 group :development do
@@ -27,7 +28,6 @@ group :development do
 end
 group :development, :test do
   gem 'rspec-rails'
-  gem 'pg'
 end
 group :test do
   gem 'database_cleaner', '1.0.1'

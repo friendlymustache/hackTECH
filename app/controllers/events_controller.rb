@@ -1,7 +1,13 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   layout 'full_app'
+  before_filter :authenticate, only: [:index]
 
+
+
+
+  # GET /events
+  # GET /events.json
   def index
     @events = Event.all
   end
@@ -27,11 +33,9 @@ class EventsController < ApplicationController
 
     respond_to do |format|
       if @event.save
-        format.html { redirect_to @event, notice: 'Event was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @event }
+        format.html { redirect_to :action => 'new', notice: 'Event was successfully created.' }
       else
         format.html { render action: 'new' }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -42,10 +46,8 @@ class EventsController < ApplicationController
     respond_to do |format|
       if @event.update(event_params)
         format.html { redirect_to @event, notice: 'Event was successfully updated.' }
-        format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @event.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -68,6 +70,12 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:first_name, :last_name, :email, :phone)
+      params.require(:event).permit(:first_name, :last_name, :email, :phone, :school)
     end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+      username == "shrav" && password == "kshitshit"
+    end
+  end
 end

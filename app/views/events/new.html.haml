@@ -1,32 +1,37 @@
-.container{:class => "form-horizontal"}
-  %h1.center Register
+.signin-background{:style => "background: #4C525A; height: 100%; margin-top: 0px;"}
+  .container
+    = form_for @event do |f|
+      - if @event.errors.any?
+        #error_explanation
+          %h2= "#{pluralize(@event.errors.count, "error")} prohibited this event from being saved:"
+          %ul
+            - @event.errors.full_messages.each do |msg|
+              %li= msg
 
-  = form_for @event do |f|
-    - if @event.errors.any?
-      #error_explanation
-        %h2= "#{pluralize(@event.errors.count, "error")} prohibited this event from being saved:"
-        %ul
-          - @event.errors.full_messages.each do |msg|
-            %li= msg
-    .center{:style => "width: 100%;"}
-      .holder{:style => "width: 50%; margin: 0 auto;"}
-        %form.form-horizontal{:role => "form"}
-          .form-group
-            %label.col-sm-2.control-label{:for => "event_first_name"} First Name
-            .col-sm-4
-              %input#inputEmail3.form-control{:id => "event_first_name", :name => "event[first_name]"}
-          .form-group
-            %label.col-sm-2.control-label{:for => "event_last_name"} Last Name
-            .col-sm-4
-              %input#inputPassword3.form-control{:id => "event_last_name", :name => "event[last_name]"}
-          .form-group
-            %label.col-sm-2.control-label{:for => "event_email"} Email
-            .col-sm-4
-              %input#inputEmail3.form-control{:id => "event_email", :name => "event[email]"}
-          .form-group
-            %label.col-sm-2.control-label{:for => "event_phone"} Phone
-            .col-sm-4
-              %input#inputPassword3.form-control{:id => "event_phone", :name => "event[phone]"}
-          .form-group
-            .col-sm-offset-2.col-sm-4
-              %button.btn.btn-default{:type => "submit", :name => "commit"} Register
+      #login-box
+        =image_tag('tag.png', :class => "login-tag")
+        %h2{:style => "margin-bottom: 15px;"} Register
+        .field
+          = f.label :first_name
+          %br
+          = f.text_field :first_name
+        .field
+          = f.label :last_name
+          %br
+          = f.text_field :last_name
+        .field
+          = f.label :email
+          %br
+          = f.text_field :email
+        .field
+          = f.label :phone
+          %br
+          = f.number_field :phone
+        .field
+          = f.label :school
+          %br
+          = f.text_field :school
+        .center{:style => "margin-top: 20px;"}
+          .actions
+            = f.submit 'Register', :class => "user_submit"
+      .login-tag

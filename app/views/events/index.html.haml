@@ -6,6 +6,7 @@
     %th Last name
     %th Email
     %th Phone
+    %th School
     %th
     %th
     %th
@@ -16,7 +17,7 @@
       %td= event.last_name
       %td= event.email
       %td= event.phone
-      %td= link_to 'Show', event
+      %td= event.school
       %td= link_to 'Edit', edit_event_path(event)
       %td= link_to 'Destroy', event, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
