@@ -27,6 +27,10 @@
           = f.label :phone
           %br
           = f.number_field :phone
+        .field
+          = f.label :school
+          %br
+          = f.text_field :school
         .center{:style => "margin-top: 20px;"}
           .actions
             = f.submit 'Register', :class => "user_submit"

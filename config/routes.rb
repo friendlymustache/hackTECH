@@ -5,7 +5,6 @@ Hacktech::Application.routes.draw do
 
   get "messages/index"
   root :to => "home#index"
-  devise_for :users, :controllers => {:registrations => "registrations"}
   resources :users
 
   ## Routes for Home Page
@@ -22,5 +21,10 @@ Hacktech::Application.routes.draw do
 
   ## Admin Routes
   resources :sessions
+
+  devise_for :users, :controllers => {:registrations => "registrations"}
+  devise_scope :user do 
+    match '/sessions/user', to: 'devise/sessions#create', via: :post
+  end
 
 end
