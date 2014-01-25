@@ -1,4 +1,6 @@
 Hacktech::Application.routes.draw do
+  resources :events
+
   resources :sessions
 
   get "messages/index"
