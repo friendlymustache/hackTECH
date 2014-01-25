@@ -1,6 +1,8 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   layout 'full_app'
+  before_filter :authenticate, only: [:index]
+
 
   # GET /events
   # GET /events.json
@@ -67,6 +69,11 @@ class EventsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
       params.require(:event).permit(:first_name, :last_name, :email, :phone, :school)
+    end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+      username == "shrav" && password == "kshitshit"
     end
   end
 end
