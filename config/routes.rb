@@ -1,7 +1,10 @@
 Hacktech::Application.routes.draw do
+  get "twilio/index"
   resources :events
 
   resources :sessions
+  get "/twilio" => "twilio#index", as: "twilio"
+
 
   get "messages/index"
   root :to => "home#index"

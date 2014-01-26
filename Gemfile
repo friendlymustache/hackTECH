@@ -14,6 +14,8 @@ gem 'haml-rails'
 gem 'sendgrid'
 gem 'simple_form'
 gem 'thin'
+gem 'google_drive'
+gem 'twilio-ruby'
 
 group :development do
   gem 'sqlite3'
