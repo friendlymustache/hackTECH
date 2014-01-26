@@ -15,11 +15,11 @@ class HomeController < ApplicationController
   end
 
   def bus_info
-  	send_file(Rails.root.join("app/views", "home", "bus_info.pdf").to_s, :disposition => "inline", :type => "application/pdf")  	  	  	
+  	#send_file(Rails.root.join("app/views", "home", "bus_info.pdf").to_s, :disposition => "inline", :type => "application/pdf")  	  	  	
   end
 
   def lax_info
-  	send_file(Rails.root.join("app/views", "home", "lax_info.pdf").to_s, :disposition => "inline", :type => "application/pdf")  	  	  	  	
+  	#send_file(Rails.root.join("app/views", "home", "lax_info.pdf").to_s, :disposition => "inline", :type => "application/pdf")  	  	  	  	
   end
 
   def aws
